@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./stylesheets/App.css";
 
 const App = () => {
-  const counter = 0;
+  const [counter, setCounter] = useState(0);
 
   return (
     <div className="container">
@@ -12,9 +12,9 @@ const App = () => {
         <div className="display-box">{counter}</div>
 
         <div className="button-group">
-          <button className="button danger" type="button">Down</button>
-          <button className="button warning" type="button">Reset</button>
-          <button className="button primary" type="button">Up</button>
+          <button className="button danger" type="button" onClick={() => setCounter(counter - 1)}>Down</button>
+          <button className="button warning" type="button" onClick={() => setCounter(0)}>Reset</button>
+          <button className="button primary" type="button" onClick={() => setCounter(counter + 1)}>Up</button>
         </div>
       </div>
     </div>
