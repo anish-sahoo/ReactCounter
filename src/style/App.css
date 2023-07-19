@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #1167b1 ;
 }
 
 .container {
@@ -10,61 +11,81 @@ body {
   align-items: center;
 }
 
+.confetti {
+  transition: all 5s ease-in-out;
+}
+
 .main-content {
   padding: 20px;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 20px 8px rgba(235, 235, 235, 1);
+  border-radius: 8px;
+  background-color: #76b8eb;
+  box-shadow: 0px 0px 100px 58px #074790;  /*9bd4e4;*/
 }
 
 .header {
   text-align: center;
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  /*text-shadow: 1px 1px 2px black;*/
+  color: black;
 }
 
 .display-box {
-  height: 150px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 100px;
   font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 1px 2px 3px #000000;
+  color: #ffffff;
 }
 
 .button {
   border: none;
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   height: 50px;
-  width: 90px;
+  width: 120px;
   margin: 4px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
 .primary {
   background-color: #4CAF50;
+  box-shadow: 1px 2px 3px darkgreen;
 }
 
 .primary:hover {
   background-color: #348b37;
+  text-shadow: 1px 2px 3px darkslategray;
+  box-shadow: 1px 2px 3px darkslategray;
 }
 
 .warning {
   background-color: #eacb2d;
+  box-shadow: 1px 2px 3px #96821c;
 }
 
 .warning:hover {
   background-color: #c5aa25;
+  text-shadow: 1px 2px 3px darkslategray;
+  box-shadow: 1px 2px 3px darkslategray;
 }
 
 .danger {
+  box-shadow: 1px 2px 3px darkred;
   background-color: #d73b3b;
 }
 
 .danger:hover {
   background-color: #b92e2e;
+  text-shadow: 1px 2px 3px darkslategray;
+  box-shadow: 1px 2px 3px darkslategray;
 }
